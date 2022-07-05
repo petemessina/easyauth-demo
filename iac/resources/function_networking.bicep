@@ -29,7 +29,7 @@ resource portalVnetLink 'Microsoft.Network/privateDnsZones/virtualNetworkLinks@2
   }
 }
 
-resource logicAppRecord 'Microsoft.Network/privateDnsZones/A@2020-06-01' = {
+resource functionAppRecord 'Microsoft.Network/privateDnsZones/A@2020-06-01' = {
   name: 'privatelink.azurewebsites.net/${functionAppName}'
   properties: {
     aRecords: [
@@ -45,7 +45,7 @@ resource logicAppRecord 'Microsoft.Network/privateDnsZones/A@2020-06-01' = {
   ]
 }
 
-resource logicAppScmRecord 'Microsoft.Network/privateDnsZones/A@2020-06-01' = {
+resource functionAppScmRecord 'Microsoft.Network/privateDnsZones/A@2020-06-01' = {
   name: 'privatelink.azurewebsites.net/${functionAppName}.scm'
   properties: {
     aRecords: [
