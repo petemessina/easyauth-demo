@@ -7,14 +7,27 @@ The purpose of this project is to provide a baseline bicep and JAVA function exa
 ## Application Registration Setup
 ### To enable EasyAuth through the bicep templates in this project please follow the steps below.
 
-1. Create a new application Registration and take note of the Application (client) ID
-2. Enable ID Tokens on the Authentications tab
-3. Set the Application ID URI
+1. Navigate to Azure Application Registrations
+![Alt text](assets/AppRegistration.png?raw=true "Azure Application Registration")
+
+2. Create a new application Registration and take note of the Application (client) ID
+![Alt text](assets/NewRegistration.png?raw=true "New Registration")
+![Alt text](assets/ClientId.png?raw=true "Client Id")
+
+3. Enable ID Tokens on the Authentications tab
+![Alt text](assets/IdTokens.png?raw=true "Enable ID Tokens")
+
+4. Set the Application ID URI
+![Alt text](assets/ExposeAPI.png?raw=true "Expose API")
 
 ### To create a service that can call the function utilizing an access token please follow the steps below.
 
 1. Create a new application Registration and take note of the Application (client) ID
+![Alt text](assets/NewRegistration.png?raw=true "New Registration")
+![Alt text](assets/ClientId.png?raw=true "Client Id")
+
 2. Create an application secret.
+![Alt text](assets/ClientSecret.png?raw=true "Client Secret")
 
 ### At this point all service can call this function. To restrict access to specific users and services please follow the steps below.
 
